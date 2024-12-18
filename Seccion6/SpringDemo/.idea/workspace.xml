@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="372af271-d21f-4dcd-bcef-00378bb2075a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Seccion3/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seccion5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/com/telusko/app/Alien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/com/telusko/app/Laptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seccion7/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/src/main/java/org/constandse/appmockito/ejemplos/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/src/main/java/org/constandse/appmockito/ejemplos/models/Examen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/src/main/java/org/constandse/appmockito/ejemplos/repositories/ExamenRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/src/main/java/org/constandse/appmockito/ejemplos/repositories/PreguntaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/src/main/java/org/constandse/appmockito/ejemplos/services/ExamenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/src/main/java/org/constandse/appmockito/ejemplos/services/ExamenServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/src/test/java/org/constandse/appmockito/ejemplos/services/Datos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/src/test/java/org/constandse/appmockito/ejemplos/services/ExamenServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/classes/org/constandse/appmockito/ejemplos/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/classes/org/constandse/appmockito/ejemplos/models/Examen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/classes/org/constandse/appmockito/ejemplos/repositories/ExamenRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/classes/org/constandse/appmockito/ejemplos/repositories/PreguntaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/classes/org/constandse/appmockito/ejemplos/services/ExamenService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/classes/org/constandse/appmockito/ejemplos/services/ExamenServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/test-classes/org/constandse/appmockito/ejemplos/services/Datos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/test-classes/org/constandse/appmockito/ejemplos/services/ExamenServiceImplTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/test-classes/org/constandse/appmockito/ejemplos/services/ExamenServiceImplTest$MiArgsMatchers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/test-classes/org/constandse/appmockito/ejemplos/services/ExamenServiceImplTest$Preguntas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/test-classes/org/constandse/appmockito/ejemplos/services/ExamenServiceImplTest$testExamenNombre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app-mockito/target/test-classes/org/constandse/appmockito/ejemplos/services/ExamenServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/src/main/java/org/esteban/junitapp/ejemplos/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/src/main/java/org/esteban/junitapp/ejemplos/exceptions/DineroInsuficienteException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/src/main/java/org/esteban/junitapp/ejemplos/models/Banco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/src/main/java/org/esteban/junitapp/ejemplos/models/Cuenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/src/main/resources/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/src/main/resources/data2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/src/test/java/org/esteban/junitapp/ejemplos/models/CuentaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/classes/data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/classes/data2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/classes/org/esteban/junitapp/ejemplos/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/classes/org/esteban/junitapp/ejemplos/exceptions/DineroInsuficienteException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/classes/org/esteban/junitapp/ejemplos/models/Banco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/classes/org/esteban/junitapp/ejemplos/models/Cuenta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/test-classes/org/esteban/junitapp/ejemplos/models/CuentaTest$CuentaTestNombreSaldo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/test-classes/org/esteban/junitapp/ejemplos/models/CuentaTest$JavaVersionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/test-classes/org/esteban/junitapp/ejemplos/models/CuentaTest$OperacionesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/test-classes/org/esteban/junitapp/ejemplos/models/CuentaTest$PruebasParametrizadasTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/test-classes/org/esteban/junitapp/ejemplos/models/CuentaTest$SistemPropertiesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/test-classes/org/esteban/junitapp/ejemplos/models/CuentaTest$SistemaOperativoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/test-classes/org/esteban/junitapp/ejemplos/models/CuentaTest$VariableAmbienteTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/test-classes/org/esteban/junitapp/ejemplos/models/CuentaTest$testTimeOut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../junit5_app/target/test-classes/org/esteban/junitapp/ejemplos/models/CuentaTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2qLyx6V1gpmjfUlX0ppnANQkTtq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Agileadmin/Documents/Udemy/JavaSpringFramework/Seccion7/SpringDemo"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="372af271-d21f-4dcd-bcef-00378bb2075a" name="Changes" comment="" />
+      <created>1734456396346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734456396346</updated>
+    </task>
+    <servers />
+  </component>
+</project>
