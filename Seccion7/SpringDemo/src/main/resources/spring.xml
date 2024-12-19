@@ -1,0 +1,114 @@
+<!-- BEANS
+    Configuration founded in internet as XML Schema-based configuration
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- BEAN
+    Beans are objects that are manage by Spring Framework
+
+            <bean
+                * id="alien" // `id` is an optional attribute, but to refer to the bean we need the id as their name
+                * class="org.telusko.Alien" // Use the path for the class
+                * scope="prototype"></bean> // `scope` has singleton and prototype values, where singleton only use one object as reference while prototype creates a new object everytime we use getBean()
+                * autowired="byName" // Spring connect the object automatically to the needed places. More examples of it below in their properties. There is also an option of "byType" that identifies Laptop and Desktop as a Computer since it is his interface.
+            ></bean>
+    -->
+    <bean id="alienA" class="org.telusko.Alien" autowire="byType" lazy-init="true">
+        <!-- PROPERTY | SET INJECTION
+        It manages the variables of the object
+            <property
+                    * name="age" // Indicate which variable are we working with
+                    * value="21" // Indicate his value, only with primitive value.
+                    * ref="computer" // Indicate the class reference the id name of the bean
+                    * primary="true" // Indicate that if there is an autowired, give priority to this bean instead other ones.
+                    * lazy-init="true" // Object is created only when it's called for the first time
+                    />
+        -->
+
+        <property name="age" value="21"></property>
+
+        <!-- AUTOWIRED
+            Instead of using <property name="computer" ref="computer"/> we can use the autowired tag. We can use
+        -->
+
+        <!-- <property name="computer" ref="computer"/> -->
+    </bean>
+
+    <bean id="alienB" class="org.telusko.Alien" autowire="byType" lazy-init="true">
+        <property name="computer" ref="computerA"/> <!-- Omit the priority and give preference to property -->
+
+        <!-- CONSTRUCTOR INJECTOR
+            It created an object using the constructor. It is important to use the same order in which the parameters are registered. Otherwise, we can use the parameter `type` when all parameters that are used are different, or we can use `ìndex` to specify the order of the parameters in the constructor.
+
+            The constructor we are working with is Alien(int age), which in this case we would work with:
+
+                <constructor-arg
+                    * value="22" // Indicate his value, only with primitive value.
+                    />
+        -->
+        <constructor-arg value="22"/>
+    </bean>
+
+    <bean id="alienC" class="org.telusko.Alien" autowire="byType" lazy-init="true">
+        <property name="computer">
+            <!-- INNER BEAN
+                This bean can be used only for alienC bean and not from the outside.
+            -->
+            <bean id="computerB" class="org.telusko.Desktop"/>
+        </property>
+
+        <!--
+            The constructor we are working with is Alien(int age, Laptop lap), which in this case we would work with:
+
+                <constructor-arg
+                    type = "int" value="23" // Indicate his value, only with primitive value.
+                    />
+                <constructor-arg
+                    type="org.telusko.Laptop" ref="lap" // Indicate the class reference the id name of the bean
+                    />
+        -->
+        <constructor-arg type="org.telusko.Computer" ref="computerA"/>
+        <constructor-arg type="int" value="23"/>
+    </bean>
+
+    <bean id="alienD" class="org.telusko.Alien" autowire="byType" lazy-init="true">
+        <!--
+            The constructor we are working with is Alien(int age, int salary, Laptop lap), which in this case we would work with:
+
+                <constructor-arg
+                    index="0" value="24" // Indicate the value, in the first parameter.
+                    />
+                <constructor-arg
+                    index="2" ref="lap" // Indicate the class reference in the third parameter
+                    />
+                <constructor-arg
+                    index="1" value="21" // Indicate the value, in the second parameter.
+                    />
+        -->
+        <constructor-arg index="2" ref="computerA"/>
+        <constructor-arg index="1" value="1500"/>
+        <constructor-arg index="0" value="24"/>
+
+        <!--
+            On the other hand, instead of index number we can use their names and complement with the annotation @ConstructorProperties({"age", "salary", "lap"})
+
+                <constructor-arg
+                    name="age" value="24" // Indicate the value, in the first parameter.
+                    />
+                <constructor-arg
+                    name="computer" ref="lap" // Indicate the class reference in the third parameter
+                    />
+                <constructor-arg
+                    name="salary" value="21" // Indicate the value, in the second parameter.
+                    />
+        -->
+    </bean>
+
+    <bean id="computerA" class="org.telusko.Laptop" primary="true"></bean>
+    <bean id="computerB" class="org.telusko.Desktop"/>
+
+
+</beans>
