@@ -1,5 +1,7 @@
 # Spring Getting Started
 
+> ***This project is setup for Java 21***
+
 ## Introduction
 
 Spring is a lightweight open source framework, which works with Plain Old Java Objects (POJOs), for building Java-based enterprise applications that provides a comprehensive programming and configuration model for modern Java applications, offering support for various functionalities such as dependency injection, aspect-oriented programming, and integration with data access and web technologies.
