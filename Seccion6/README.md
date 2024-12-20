@@ -65,16 +65,16 @@ Working together, IoC enable Spring to take control of objects creating and life
 ## Spring vs Spring Boot
 Spring and Spring Boot are part of the same ecosystem, but they serve different purposes.
 
-| **Feature**               | **Spring Framework**                                 | **Spring Boot**                                   |
-|---------------------------|------------------------------------------------------|-------------------------------------------------|
-| **Purpose**               | Comprehensive framework for Java applications.       | Simplifies Spring development with ready-to-use tools. |
-| **Configuration**         | Requires manual configuration (XML/Java).            | Automatic configuration with minimal setup.     |
-| **Embedded Server**       | Requires external servers (e.g., Tomcat, JBoss).     | Comes with embedded servers (Tomcat, Jetty).    |
-| **Dependencies**          | Manually manage dependencies in `pom.xml`.           | Provides **starter dependencies** for quick setup. |
-| **Setup Complexity**      | Higher due to manual wiring and configurations.      | Low complexity with **auto-configuration**.     |
-| **Deployment**            | WAR file deployed to an external server.             | Creates **executable JARs** with embedded servers. |
-| **Microservices Support** | Supported but requires more setup.                   | Built-in support for **microservices**.         |
-| **Spring Initializr**     | Not available.                                       | Provides **Spring Initializr** for project bootstrapping. |
+| **Feature**               | **Spring Framework**                             | **Spring Boot**                                           |
+|---------------------------|--------------------------------------------------|-----------------------------------------------------------|
+| **Purpose**               | Comprehensive framework for Java applications.   | Simplifies Spring development with ready-to-use tools.    |
+| **Configuration**         | Requires manual configuration (XML/Java).        | Automatic configuration with minimal setup.               |
+| **Embedded Server**       | Requires external servers (e.g., Tomcat, JBoss). | Comes with embedded servers (Tomcat, Jetty).              |
+| **Dependencies**          | Manually manage dependencies in `pom.xml`.       | Provides **starter dependencies** for quick setup.        |
+| **Setup Complexity**      | Higher due to manual wiring and configurations.  | Low complexity with **auto-configuration**.               |
+| **Deployment**            | WAR file deployed to an external server.         | Creates **executable JARs** with embedded servers.        |
+| **Microservices Support** | Supported but requires more setup.               | Built-in support for **microservices**.                   |
+| **Spring Initializr**     | Not available.                                   | Provides **Spring Initializr** for project bootstrapping. |
 
 We use Spring when:
 * Legacy projects or complex applications where manual configuration is required.
