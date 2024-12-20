@@ -41,15 +41,15 @@ Some key features of Spring are:
    A subproject of Spring that simplifies application development by providing defaults, embedded servers, and minimal configuration.
 
 ### Core Components of Spring
-| **Component**      | **Description**                                                                                      |
-|--------------------|------------------------------------------------------------------------------------------------------|
-| **Spring Core**    | Provides the IoC container and Dependency Injection (DI).                                            |
-| **Spring AOP**     | Supports Aspect-Oriented Programming for modularizing cross-cutting concerns.                        |
-| **Spring MVC**     | Framework for building web applications using the Model-View-Controller design pattern.              |
-| **Spring Data**    | Simplifies database access and supports JPA, JDBC, and NoSQL databases.                              |
+| **Component**       | **Description**                                                                                      |
+|---------------------|------------------------------------------------------------------------------------------------------|
+| **Spring Core**     | Provides the IoC container and Dependency Injection (DI).                                            |
+| **Spring AOP**      | Supports Aspect-Oriented Programming for modularizing cross-cutting concerns.                        |
+| **Spring MVC**      | Framework for building web applications using the Model-View-Controller design pattern.              |
+| **Spring Data**     | Simplifies database access and supports JPA, JDBC, and NoSQL databases.                              |
 | **Spring Security** | Provides authentication, authorization, and security for applications.                               |
-| **Spring Boot**    | Simplifies application setup with opinionated defaults, embedded servers, and minimal configuration. |
-| **Spring Cloud**   | Tools for building distributed and cloud-native applications.                                        |
+| **Spring Boot**     | Simplifies application setup with opinionated defaults, embedded servers, and minimal configuration. |
+| **Spring Cloud**    | Tools for building distributed and cloud-native applications.                                        |
 
 ## Spring Docs
 
