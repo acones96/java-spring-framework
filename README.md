@@ -1,4 +1,5 @@
-# JavaSpringFramework
+# Java Spring Framework 6 with Spring Boot 3
+
 
 Each section works as an independent project, so open them in the IDE by the one you will be working on.
 
