@@ -85,4 +85,28 @@ public class JobRepository {
         this.jobs.add(job);
         System.out.println(this.jobs);
     }
+
+    public JobPost findJobById(int postId) {
+        for (JobPost job : this.jobs) {
+            if (job.getPostId() == postId)
+                return job;
+        }
+
+        return null;
+    }
+
+    public void updateJob(JobPost jobPost) {
+        for (JobPost jobPostDB : jobs) {
+            if (jobPost.getPostId() == jobPostDB.getPostId()) {
+                jobPostDB.setPostProfile(jobPost.getPostProfile());
+                jobPostDB.setPostDesc(jobPost.getPostDesc());
+                jobPostDB.setReqExperience(jobPost.getReqExperience());
+                jobPostDB.setPostTechStack(jobPost.getPostTechStack());
+            }
+        }
+    }
+
+    public void deleteJob(int postId) {
+        jobs.removeIf(jobPost -> jobPost.getPostId() == postId);
+    }
 }
