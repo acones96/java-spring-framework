@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Seccion16/ecom-frontend/ecom-frontend-1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Seccion16/ecom-frontend/ecom-frontend-2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Seccion16/ecom-frontend/ecom-frontend-3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Seccion16/ecom-frontend/ecom-frontend-4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Seccion16/ecom-frontend/ecom-frontend-5" vcs="Git" />
   </component>
 </project>
