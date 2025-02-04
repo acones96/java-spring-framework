@@ -31,3 +31,4 @@ Each section corresponds to:
 24. Microservices
 25. Git
 26. Data Structures and Algorithms (DSA)
+27. Hibernate (new)
