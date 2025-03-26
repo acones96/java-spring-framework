@@ -42,6 +42,8 @@ A JWT has three parts, separated by dots `(.)`:
 
 ```
 Header.Payload.Signature
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ```
 
 ### JWT Filters
@@ -53,6 +55,13 @@ JWT filters are responsible for:
 2. **Validating the JWT**
 3. **Setting the Authentication** in the Spring Security context if the JWT is valid.
 4. **Allowing or Denying Access** to protected endpoints based on the JWT's validity and claims.
+
+### When is JWT Used
+* **Authentication**. Used in login systems like OAuth (Google Login, Facebook Login).
+
+* **Authorization**. APIs use JWT to grant access to specific resources.
+
+* **Session Management**. Instead of storing session data on a server, JWT stores it on the client.
 
 ## OAuth2
 
