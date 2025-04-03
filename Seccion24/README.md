@@ -1,6 +1,6 @@
 # Microservices
 
-A microservice is a small, independent, and loosely coupled service that is part of a larger system, where multiple microservices work together to form a complete application. 
+A microservice is a small, independent, and loosely coupled service that is part of a larger system, where multiple microservices work together to form a complete application.
 
 This kind of architecture is more modern than a monolithic architecture, where the hole application is a single, unified codebase where all components are tightly coupled and run as one unit, but where a small bug can bring down the entire system and his development is slower.
 
