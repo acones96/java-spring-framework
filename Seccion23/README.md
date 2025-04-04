@@ -74,8 +74,36 @@ We have different service:
 
 4. **Multi-Cloud.** Uses multiple cloud providers to diversify risks and optimize services.
 
-## Servicios AWS
-* **Elastic Compute Cloud (EC2)** is a cloud-bassed virtual machine (VM) service, which would be an IaaS, that gives us full control over the operating system, networking, and computing resource.
+## AWS
+
+### Amazon EC2 Basics Instance Families
+An EC2 instance is a virtual machine (VM) that runs in the AWS Cloud. The instance type that you choose determines the hardware of the host computer used. Each instance offers different compute, memory, and storage capabilities.
+
+### Decoding instance names
+Instance names are a combination of the instance family, generation and size. They can also indicate additional capabilities, such as specific processor type or optimized networking performance. Let's use `m5z n.xlarge` as an example:
+
+* Instance family (m): the first position represents the instance family where M is a general purpose instance subfamily.
+* Instance generation (5): with higher number being the newest generation.
+* Attribute (z): not all instances have one. It provides additional information about the instances capabilities, for example z indicates high frequency which is ideal for high single-thread performance..
+* Additional information (n): not all instances have an additional attribute that details what the instance is optimized to do. For this case n stands for network.
+* Size (xlarge): represents the size of the instance, which the larger the size, the more resources, such as CPU and memory.
+
+Here is a list of additional items that might be seen in an instance name:
+
+* a – AMD processors
+* g – AWS Graviton processors
+* i – Intel processors
+* d – Instance store volumes
+* n – Network optimization
+* b – Block storage optimization
+* e – Extra storage or memory
+* z – High frequency
+
+### EC2 Use Cases
+
+
+### Services AWS
+* **Elastic Compute Cloud (EC2)** is a cloud-based virtual machine (VM) service, which would be an IaaS, that gives us full control over the operating system, networking, and computing resource.
   * **Use Cases**
     * **_Hosting custom web applications._** Run web servers like Apache, Nginx, or Tomcat for full control over configurations.
     * **_High-performance computing (HPC)._** Use EC2 for scientific simulations, AI/ML training, or big data processing.
