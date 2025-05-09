@@ -1,0 +1,45 @@
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <!--
+            Tells Hibernate which Java class implements the JDBC driver for the target database (e.g., MySQL, PostgreSQL). This class enables communication between Hibernate and the database.
+        -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <!--
+            Specifies the database’s location, including the protocol, host, port, and database name. The format depends on the database type.
+        -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/telusko</property>
+        <!--
+            Specifies the database user account with permissions to access the target database.
+        -->
+        <property name="hibernate.connection.username">postgres</property>
+        <!--
+            The password associated with the hibernate.connection.username for authentication.
+        -->
+        <property name="hibernate.connection.password">admin</property>
+
+        <!--
+            Determines how Hibernate manages the database schema based on entity mappings (e.g., @Entity classes). Options include:
+
+            * create: Drops and recreates the schema on startup.
+            * update: Updates the schema to match entities without dropping data (not always reliable).
+            * validate: Validates the schema against entities without changes.
+            * create-drop: Creates the schema on startup and drops it on shutdown.
+            * none: No schema changes.
+        -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!--
+            Configuration setting in Hibernate that tells the framework which database dialect to use. A dialect is a class that defines how Hibernate should interact with a specific database
+        -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!--
+            When set to true, Hibernate outputs all SQL queries to the console or log, aiding debugging.
+        -->
+        <property name="hibernate.show_sql">true</property>
+        <!--
+            When set to true and hibernate.show_sql is enabled, Hibernate formats SQL queries with line breaks and indentation.
+        -->
+        <property name="hibernate.format_sql">true</property>
+    </session-factory>
+</hibernate-configuration>
