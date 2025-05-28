@@ -101,7 +101,7 @@ There are many commands, here are a few of them divided into different categorie
 | `git log --oneline`  | View concise commit history. |
 | `git show <commit>`  | View details of a specific commit. |
 | `git diff` | Show unstaged changes. |
-| git blame <file>` | Show who last modified each line of a file. |
+| `git blame <file>` | Show who last modified each line of a file. |
 
 ### Branches
 | Command               | Description |
