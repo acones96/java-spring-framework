@@ -22,6 +22,8 @@ We need to configure our git credentials: username and email. We use the followi
 
 We can verify the credentials were set correctly by using `git config --global --list`, which allow us to see the credentials we are working with.
 
+We can log in using SSH (`ssh-keygen -o`) so we don't need to log in each time we want to do a modification, but first we need to add the key generated into your GitHub profile.
+
 ## Git Workflow Areas
 
 1. **Working Directory** *(or Working Tree)*  
@@ -79,53 +81,57 @@ There are many commands, here are a few of them divided into different categorie
 
 ### Working with Files
 
-| Command | Description                                       |
-|---------|---------------------------------------------------|
-| `git status` | Show the current status of the working directory. |
-| `git add <file>` | Stage a specific file for commit.                 |
-| `git add .` | Stage all changes in the directory.               |
+| Command              | Description                                       |
+|----------------------|---------------------------------------------------|
+| `git status`         | Show the current status of the working directory. |
+| `git add <file>`     | Stage a specific file for commit.                 |
+| `git add .`          | Stage all changes in the directory.               |
 | `git restore <file>` | Discard changes in the working directory.         |
-| `git rm <file>`| Remove a file and stage the deletion.             |
+| `git rm <file>`      | Remove a file and stage the deletion.             |
 
 ### Committing Changes
 
-| Command | Description                                 |
-|---------|---------------------------------------------|
-| `git commit -m "message"` | Commit staged changes with a message.       |
+| Command                    | Description                                 |
+|----------------------------|---------------------------------------------|
+| `git commit -m "message"`  | Commit staged changes with a message.       |
 | `git commit -am "message"` | Stage and commit tracked files in one step. |
 
 ### Viewing History
-| Command              | Description |
-|----------------------|-------------|
-| `git log`            | View full commit history. |
-| `git log --oneline`  | View concise commit history. |
-| `git show <commit>`  | View details of a specific commit. |
-| `git diff` | Show unstaged changes. |
-| `git blame <file>` | Show who last modified each line of a file. |
+| Command             | Description                                 |
+|---------------------|---------------------------------------------|
+| `git log`           | View full commit history.                   |
+| `git log --oneline` | View concise commit history.                |
+| `git log --graph`   | Show a tree with all commits                |
+| `git show <commit>` | View details of a specific commit.          |
+| `git diff`          | Show unstaged changes.                      |
+| `git blame <file>`  | Show who last modified each line of a file. |
 
 ### Branches
-| Command               | Description |
-|-----------------------|-------------|
-| `git branch`          | List local branches. | 
-| `git branch <name>`   | Create a new branch. |
-| `git checkout <name>` | Switch to an existing branch. |
-| `git checkout -b <name>` | Create and switch to a new branch. |
-| `git merge <branch>` | Merge a branch into the current one. |
-| `git branch -d <name>` | Delete a local branch. |
+| Command                                            | Description                                           |
+|----------------------------------------------------|-------------------------------------------------------|
+| `git branch`                                       | List local branches.                                  | 
+| `git branch <name>`                                | Create a new branch.                                  |
+| `git checkout <name>` or `git switch <name>`       | Switch to an existing branch.                         |
+| `git checkout <commitId>`                          | Show changes from the commit you request              |
+| `git checkout -` or `git switch -`                 | Switch back to the previous branch we were working on |
+| `git checkout -b <name>` or `git switch -c <name>` | Create and switch to a new branch.                    |
+| `git merge <branch>`                               | Merge a branch into the current one.                  |
+| `git branch -d <name>`                             | Delete a local branch.                                |
 
 ### Undoing Changes
-| Command | Description |
-|---------|-------------|
-| `git reset <file>` | Unstage a file. |
-| `git reset --hard` | Reset all changes to last commit (destructive). |
-| `git revert <commit>` | Undo a commmit by creating a new one. |
-| `git clean -fd` | Remove untracked files/directories (use with caution). |
+| Command               | Description                                            |
+|-----------------------|--------------------------------------------------------|
+| `git reset <file>`    | Unstage a file.                                        |
+| `git reset --hard`    | Reset all changes to last commit (destructive).        |
+| `git revert <commit>` | Undo a commmit by creating a new one.                  |
+| `git clean -fd`       | Remove untracked files/directories (use with caution). |
 
 ### Advanced Commands
-| Command | Description |
-|---------|-------------|
-| `git stash` | Temporarily save uncommitted changes. |
-| `git stash apply` | Reapply the last stashed changes. |
-| `git tag <name>` | Tag a specific commit. |
-| `git rebase <branch>` | Reapply commits onto another branch. |
+| Command                    | Description                                  |
+|----------------------------|----------------------------------------------|
+| `git stash`                | Temporarily save uncommitted changes.        |
+| `git stash list`           | Show all stash you saved                     |
+| `git stash apply`          | Reapply the last stashed changes.            |
+| `git tag <name>`           | Tag a specific commit.                       |
+| `git rebase <branch>`      | Reapply commits onto another branch.         |
 | `git cherry-pick <commit>` | Apply a specific commit from another branch. |
