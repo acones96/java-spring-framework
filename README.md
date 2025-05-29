@@ -31,5 +31,5 @@ Each section corresponds to:
 24. [Cloud Deployment](Seccion23)
 25. [Microservices](Seccion24)
 26. [Spring AI](Seccion28)
-26. [Git](Seccion25)
-27. [Data Structures and Algorithms (DSA)](Seccion26)
+27. [Git](Seccion25)
+28. [Data Structures and Algorithms (DSA)](Seccion26)
